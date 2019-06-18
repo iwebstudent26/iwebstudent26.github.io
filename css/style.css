@@ -1,41 +1,77 @@
+/* GLOBAL */
+
+* { box-sizing: border-box; }
+
 body {
-    background: linear-gradient(rgb(129, 101, 255), rgb(39, 39, 39)) ;
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    display: grid; 
-    align-content: center;
-    text-align: center;  
-    min-height: 100vh;
 }
 
-h1 {
-    font-size: 48px;
-    text-transform: uppercase;
-    margin: 0;
-    color: goldenrod
+a {
+    text-decoration: none;
+    color: darkred;
 }
 
-p {
+
+/* HEADER */
+header {
+    background: black;
+    color: white;
+    padding: 1em 2em;
+}
+
+header a {
     color: white;
 }
 
-h2 {
-    color: lightcoral
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
+/* SITE ID */
+.site-id h1 {
+    margin: 0;
+}
 
+/* NAV */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding-top: .6em;
+}
 
+nav li {
+    margin: 0;
+    list-style: none;
+}
 
-ul {
-    max-width: 600px;
+nav a {
+    display: block;
+    padding: 1em;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid #ddd;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0;
-    color: skyblue
-   
+}
+footer nav ul {
+    justify-content: center;
 }
 
-li {
-    text-align: left;
-    
+
+/* MAIN */
+main {
+    padding: 0 0 3e, 0;
+    min-height: 80vh;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 3em 1em;
 }
