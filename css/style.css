@@ -11,20 +11,21 @@ body {
 
 a {
     text-decoration: none;
-    color: royalblue;
+    color: #FC886A;
 }
 
 
 /* HEADER */
 header {
-    background: black;
-    color: white;
+    background: #F5C1C7;
     padding: 1em 2em;
 }
 
 header a {
-    color: white;
+    background: #F5C1C7
 }
+
+
 
 header {
     display: grid;
@@ -99,7 +100,11 @@ section {
     max-width: 600px;
     margin: 1em auto;
 }
-
+.page-home .hero {
+    background-image: url('https://picsum.photos/id/102/3200/1600');
+    background-position: center bottom;
+    background-size: cover;
+}
 /* Lists */
 .lists {
     max-width: 1000px;
@@ -134,5 +139,8 @@ section {
 }
 .date {
     opacity: .5;
-    font-size: .8em
+    font-size: .8em;
+}
+.page-blog .hero {
+    background: rebeccapurple
 }
