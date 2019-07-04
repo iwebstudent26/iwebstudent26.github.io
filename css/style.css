@@ -25,7 +25,7 @@ header {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    /* align-items: center; */
 }
 
 header {
@@ -84,7 +84,7 @@ section {
     align-content: center;
     text-align: center;
     min-height: 50vh;
-    color: white;
+    color: goldenrod
 }
 .hero h2 {
     font-size: 4em;
@@ -178,3 +178,88 @@ section {
 .book-entry h3 {
     font-size: 2em
 }
+
+/* MENU BUTTON */
+
+.menu-button {
+    position: absolute;
+    top: 1.5em;
+    right: 4%;
+    display: flex;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+        top: -9999px;
+        left: -9999px;
+    }
+}
+
+/* NAVICON */
+
+.navicon {
+    color: rgba(255,255,255,0);
+    cursor: default;
+    top: 1.2em;
+}
+
+.navicon::selection {
+    color: rgba(255,255,255,0);
+}
+
+.navicon:after {
+    cursor: pointer;
+    content: "\2630";
+    font-size: 1.5em;
+    color: rgba(0,0,0,1);
+    display: block;
+    margin-left: .5em;
+    transition: .2s all ease-out;
+}
+
+.expanded .navicon:after {
+    content: "\2715";
+    transform: rotate(90deg);
+}
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+
+    .toggle-nav {
+        text-align: left;
+    }
+
+    .toggle-nav .site-nav ul {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: .4s all ease-out;
+    }
+
+    .toggle-nav .site-nav.expanded ul {
+        display: block;
+        max-height: 500px;
+        transition: .8s all ease-out;
+        padding-top: 2em;
+    }
+    
+    .toggle-nav .site-nav ul li {
+        display: block;
+        text-align: center;
+    }
+    
+    .toggle-nav .site-nav ul li a {
+        transition: .2s all ease-out;
+    }
+    
+    .toggle-nav .site-nav ul li a:hover {
+        background: #003;
+        color: #fff;
+    }
+
+} 
