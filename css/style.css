@@ -84,7 +84,6 @@ section {
     align-content: center;
     text-align: center;
     min-height: 50vh;
-    color: goldenrod
 }
 .hero h2 {
     font-size: 4em;
@@ -106,6 +105,7 @@ section {
     background-position: center;
     background-size: cover;
     background-color: #D7D7D9;
+    color: goldenrod;
 }
 .page-blog .hero {
     background-image: url('../images/coffee.jpg');
@@ -258,8 +258,6 @@ section {
     }
     
     .toggle-nav .site-nav ul li a:hover {
-        background: #003;
-        color: #fff;
+        background: navy;
+        color: seashell
     }
-
-} 
