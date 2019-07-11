@@ -261,3 +261,13 @@ section {
         background: navy;
         color: seashell
     }
+
+}
+
+/* Custom UI Designs */
+.ui-designs {
+    text-align: center;
+}
+.ui-designs img {
+    max-width: 200px;
+}
