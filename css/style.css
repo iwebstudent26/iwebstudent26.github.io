@@ -7,6 +7,7 @@ body {
     margin: 0;
     /* overflow-wrap: break-word;
     word-wrap: break-word; */
+    animation: fadeinDown 2s;
 }
 
 a {
@@ -19,6 +20,7 @@ a {
 /* HEADER */
 header {
     padding: 1em 2em;
+    animation: fadeinDown 1s;
 }
 
 
@@ -84,6 +86,7 @@ section {
     align-content: center;
     text-align: center;
     min-height: 50vh;
+    animation: fadeinUp 2s;
 }
 .hero h2 {
     font-size: 4em;
@@ -97,30 +100,35 @@ section {
 }
 .page-sub .hero {
     min-height: 30vh;
-    background-color: #888;
+   
 }
 
-.page-home .hero {
-    background-image: url('../images/valley.jpg');
-    background-position: center;
-    background-size: cover;
-    background-color: #D7D7D9;
-    color: goldenrod;
+.page-home header {
+    background-color: transparent;
 }
-.page-blog .hero {
+
+.page-home {
+    background-image: url('../images/galaxy-ocean.jpg');
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+}
+.page-blog  {
     background-image: url('../images/coffee.jpg');
     background-position: center;
     background-size: cover;
     background-color: #9FB3BF;
 }
-.page-about .hero {
+.page-about {
     background-image: url('../images/cloud.jpg');
     background-position: center;
     background-size: cover;
     background-color: #325927;
 }
-.page-books .hero {
-    background-image: url('https://picsum.photos/id/159/3200/1600');
+.page-books  {
+    background-image: url('../images/valley.jpg');
     background-position: center;
     background-size: cover;
     background-color: #325927;
@@ -132,6 +140,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1em;
+    animation: fadeinUp 2s;
 }
 
 @media (max-width:767px) {
@@ -153,6 +162,12 @@ section {
 .date {
     opacity: .5;
     font-size: .8em;
+}
+h3 {
+    color: salmon;
+}
+p {
+    color: goldenrod
 }
 
 /* Book Recommendations */
@@ -176,7 +191,8 @@ section {
     margin: 0 10px 10px 0;
 }
 .book-entry h3 {
-    font-size: 2em
+    font-size: 2em;
+    color: salmon;
 }
 
 /* MENU BUTTON */
@@ -270,4 +286,26 @@ section {
 }
 .ui-designs img {
     max-width: 200px;
+}
+
+@keyframes fadeinUp {
+    from {
+        opacity:0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeinDown {
+    from {
+        opacity:0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
 }
