@@ -7,13 +7,44 @@ body {
     margin: 0;
     /* overflow-wrap: break-word;
     word-wrap: break-word; */
-    animation: fadeinDown 2s;
+    animation: a1 2s;
+}
+
+@keyframes a1 {
+    0% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes a2 {
+    50% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes a3 {
+    75% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 a {
     text-decoration: none;
-    color: #2E5458
-    
 }
 
 
@@ -30,13 +61,14 @@ header {
     /* align-items: center; */
 }
 
-header {
-    background: #9FB3BF
-}
+
 
 /* SITE ID */
 .site-id h1 {
     margin: 0;
+}
+.site-id img {
+    max-width: 100px;
 }
 
 /* SITE NAV */
@@ -44,7 +76,11 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     margin: 0;
-    padding-top: .6em;
+    padding-top: .7em;
+}
+
+nav ul h1 {
+    padding-top: .7em;
 }
 
 nav li {
@@ -86,7 +122,7 @@ section {
     align-content: center;
     text-align: center;
     min-height: 50vh;
-    animation: fadeinUp 2s;
+    animation: fadeinUp 4s;
 }
 .hero h2 {
     font-size: 4em;
@@ -110,10 +146,13 @@ section {
 .page-home {
     background-image: url('../images/galaxy-ocean.jpg');
     background-position: center;
-    /* background-attachment: fixed; */
     background-size: cover;
     background-color: rebeccapurple;
     color: whitesmoke;
+}
+
+.page-home a {
+    color: rgb(191, 134, 255);
 }
 .page-blog  {
     background-image: url('../images/coffee.jpg');
@@ -127,12 +166,23 @@ section {
     background-size: cover;
     background-color: #325927;
 }
+
 .page-books  {
     background-image: url('../images/valley.jpg');
     background-position: center;
     background-size: cover;
     background-color: #325927;
 }
+.page-home h2 {
+    animation: fadeinUp 2s;
+}
+.page-home h3 {
+    animation: fadeinUp 4s;
+}
+.page-home h4 {
+    animation: fadeinUp 6s;
+}
+
 /* Lists */
 .lists {
     max-width: 1000px;
@@ -218,7 +268,7 @@ p {
 /* NAVICON */
 
 .navicon {
-    color: rgba(255,255,255,0);
+    color: rgba(207, 124, 255, 0);
     cursor: default;
     top: 1.2em;
 }
@@ -231,7 +281,7 @@ p {
     cursor: pointer;
     content: "\2630";
     font-size: 1.5em;
-    color: rgba(0,0,0,1);
+    color: rgb(191, 134, 255);
     display: block;
     margin-left: .5em;
     transition: .2s all ease-out;
@@ -261,7 +311,7 @@ p {
         display: block;
         max-height: 500px;
         transition: .8s all ease-out;
-        padding-top: 2em;
+        padding-top: .7em;
     }
     
     .toggle-nav .site-nav ul li {
@@ -308,4 +358,8 @@ p {
         opacity:1;
         transform: translateY(0);
     }
+}
+
+.a3 {
+    animation: a3 2s;
 }
