@@ -68,7 +68,8 @@ header {
     margin: 0;
 }
 .site-id img {
-    max-width: 100px;
+    max-width: 75px;
+    margin: 13px 0 0 0;
 }
 
 /* SITE NAV */
@@ -148,14 +149,13 @@ section {
     background-position: center;
     background-size: cover;
     background-color: rebeccapurple;
-    color: whitesmoke;
+    color: rgb(255, 198, 148);
 }
 
-.page-home a {
-    color: rgb(191, 134, 255);
+    
 }
 .page-blog  {
-    background-image: url('../images/coffee.jpg');
+    background-image: url('../images/mountain-snow.jpg');
     background-position: center;
     background-size: cover;
     background-color: #9FB3BF;
@@ -168,20 +168,21 @@ section {
 }
 
 .page-books  {
-    background-image: url('../images/valley.jpg');
+    background-image: url('../images/ice.jpg');
     background-position: center;
     background-size: cover;
     background-color: #325927;
 }
-.page-home h2 {
-    animation: fadeinUp 2s;
-}
+
 .page-home h3 {
-    animation: fadeinUp 4s;
+    color: rgb(191, 134, 255);
 }
-.page-home h4 {
-    animation: fadeinUp 6s;
+
+.page-home p {
+    color: rgb(255, 198, 148);
 }
+
+
 
 /* Lists */
 .lists {
@@ -363,3 +364,19 @@ p {
 .a3 {
     animation: a3 2s;
 }
+
+footer a {
+    color: snow;
+}
+
+.page-home header a {
+    color: rgb(191, 134, 255);
+}
+
+.page-about .navicon a {
+    color: rgb(150, 150, 150);
+}
+
+.menu-button-navicon {
+    color: rgb(150, 150, 150);
+} 
