@@ -152,8 +152,6 @@ section {
     color: rgb(255, 198, 148);
 }
 
-    
-}
 .page-blog  {
     background-image: url('../images/mountain-snow.jpg');
     background-position: center;
@@ -253,6 +251,7 @@ p {
     top: 1.5em;
     right: 4%;
     display: flex;
+    color: rgba(red, green, blue, alpha)
 }
 
 .menu-button:hover {
@@ -269,13 +268,14 @@ p {
 /* NAVICON */
 
 .navicon {
-    color: rgba(207, 124, 255, 0);
+    color: rgba(207, 124, 255,0);
     cursor: default;
     top: 1.2em;
+    position: absolute;
 }
 
 .navicon::selection {
-    color: rgba(255,255,255,0);
+    /* color: rgba(255, 0, 0); */
 }
 
 .navicon:after {
@@ -287,6 +287,10 @@ p {
     margin-left: .5em;
     transition: .2s all ease-out;
 }
+
+.page-about .navicon:after { color: gray; }
+.page-blog .navicon:after { color: green; }
+.page-books .navicon:after { color: yellow; }
 
 .expanded .navicon:after {
     content: "\2715";
@@ -324,7 +328,7 @@ p {
         transition: .2s all ease-out;
     }
     
-    .toggle-nav .site-nav ul li a:hover {
+    .page-home .toggle-nav .site-nav ul li a:hover {
         background: navy;
         color: seashell
     }
@@ -373,10 +377,43 @@ footer a {
     color: rgb(191, 134, 255);
 }
 
-.page-about .navicon a {
-    color: rgb(150, 150, 150);
+.menu-button-navicon {
+    color: black
+} 
+
+.page-about p {
+    color: rgb(0, 0, 0)
 }
 
-.menu-button-navicon {
-    color: rgb(150, 150, 150);
-} 
+.page-about .toggle-nav .site-nav ul li a:hover {
+    background: navy;
+    color: silver;
+}
+
+.page-about h3 {
+    color: rgb(85, 84, 84);
+}
+
+.page-about a {
+    color: rgb(85, 84, 84);
+}
+
+.page-about .toggle-nav .site-nav ul li a {
+    color: black;
+}
+
+.page-blog a {
+    color: salmon;
+}
+
+.page-blog p {
+    color: rgb(88, 43, 133)
+}
+
+.page-books a {
+    color: rgb(0, 0, 0);
+}
+
+.page-books p {
+    color: rgb(49, 23, 75);
+}
