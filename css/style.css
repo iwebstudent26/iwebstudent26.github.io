@@ -145,7 +145,7 @@ section {
 }
 
 .page-home {
-    background-image: url('../images/galaxy-ocean.jpg');
+    background-image: url('../images/galaxy-ocean-copy.jpg');
     background-position: center;
     background-size: cover;
     background-color: rebeccapurple;
@@ -155,7 +155,6 @@ section {
 .page-blog {
     background-image: url('../images/mountain-snow.jpg');
     background-position: center;
-    background-size: cover;
     background-color: #9FB3BF;
 }
 .page-about {
@@ -172,8 +171,12 @@ section {
     background-color: #325927;
 }
 
-.page-home h3 {
-    color: rgb(191, 134, 255);
+.page-randomguy {
+    background-image: url('../images/galaxy-ocean-copy.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rebeccapurple;
+    color: rgb(255, 198, 148);
 }
 
 .page-home p {
@@ -428,4 +431,21 @@ footer a {
 
 .page-home a {
     color: silver;
+}
+
+.randomguy {
+    text-align: center;
+}
+
+.nothing {
+    font-weight: 900;
+    color: black;
+}
+
+.page-randomguy .hero img {
+    margin: 0 auto;
+}
+
+.page-randomguy a {
+    color: rgb(191, 134, 255);
 }
